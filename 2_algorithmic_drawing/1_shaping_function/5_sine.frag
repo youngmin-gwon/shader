@@ -18,6 +18,7 @@ void main() {
     // float y = step(0.5, st.x);
     // smoothstep: 두 값 범위 안에서 보간시켜주는 방법
     // float y = smoothstep(0.1, 0.9, st.x);
+
     float y = abs(sin(fract(2.0 * u_time + st.x)));
 
     vec3 color = vec3(y);
