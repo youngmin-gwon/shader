@@ -12,7 +12,7 @@ custom:
     keywords:
       - 'Feat'
     labels:
-      - hey
+      - 'Status: Todo'
   - location: title
     keywords:
       - 'Chore'
