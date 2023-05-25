@@ -2,7 +2,6 @@ name: "Issue Labeler"
 on:
   issues:
     types: [opened, edited]
-
 permissions:
   issues: write
   contents: read
@@ -11,9 +10,8 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: github/issue-labeler@v2.5 #May not be the latest version
+    - uses: github/issue-labeler@v3.1 #May not be the latest version
       with:
-        repo-token: "{{ secrets.TOKEN }}"
         configuration-path: .github/labeler.yml
         enable-versioned-regex: 0
         
