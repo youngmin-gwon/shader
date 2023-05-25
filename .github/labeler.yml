@@ -1,0 +1,45 @@
+# Number of labels to fetch (optional). Defaults to 100
+numLabels: 40
+# These labels will not be used even if the issue contains them (optional).
+# Pass a blank array if no labels are to be excluded.
+# excludeLabels: []
+excludeLabels:
+  - pinned
+# custom configuration to override default behaviour
+# control explicitly what gets added and when
+custom:
+  - location: title
+    keywords:
+      - 'Feat'
+    labels:
+      - hey
+  - location: title
+    keywords:
+      - 'Chore'
+    labels:
+      - hello
+  - location: title
+    keywords:
+      - 'CI'
+    labels:
+      - hi
+  - location: title
+    keywords:
+      - 'Docs'
+    labels:
+      - halo
+  - location: title
+    keywords:
+      - 'Refactor'
+    labels:
+      - hola
+  - location: title
+    keywords:
+      - 'Style'
+    labels:
+      - hey
+  - location: title
+    keywords:
+      - 'Test'
+    labels:
+      - ho
