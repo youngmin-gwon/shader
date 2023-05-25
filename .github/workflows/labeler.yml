@@ -1,4 +1,4 @@
-name: Community
+name: Labeler
 on: 
   issues:
     types: [opened, edited, milestoned]
@@ -9,7 +9,12 @@ jobs:
 
   labeler:
     runs-on: ubuntu-latest
-
+    
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    
     steps:
     - name: Check Labels
       id: labeler
