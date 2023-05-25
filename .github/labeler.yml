@@ -18,24 +18,23 @@ comments:
 
     Please review the labels and make any necessary changes.
 
-# Labels is an object where:
-# - keys are labels
-# - values are objects of { include: [ pattern ], exclude: [ pattern ] }
-#    - pattern must be a valid regex, and is applied globally to
-#      title + description of issues and/or prs (see enabled config above)
-#    - 'include' patterns will associate a label if any of these patterns match
-#    - 'exclude' patterns will ignore this label if any of these patterns match
+# label
 labels:
   'bug':
     include:
-      - '\bbug[s]?\b'
-    exclude: []
-  'help wanted':
+      - '\bfix\b'
+  'test':
     include:
-      - '\bhelp( me)?\b'
-    exclude:
-      - '\b\[test(ing)?\]\b'
-  'enhancement':
+      - '\btest\b'
+  'feature':
     include:
       - '\bfeat\b'
-    exclude: []
+  'documentation':
+    include:
+      - '\bdocs\b'
+  'refactor':
+    include:
+      - '\brefactor\b'
+  'chore':
+    include:
+      - '\bchore\b'
