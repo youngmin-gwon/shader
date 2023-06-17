@@ -1,4 +1,4 @@
-// 병렬처리 Thread들이 서로에 대해 데이터를 공유할 수 없지만, 
+// 병렬처리 Thread들이 서로에 대해 데이터를 공유할 수 없지만,
 // CPU로 부터 데이터를 받을 수는 있다
 // 이 모든 input = uniform, 일정(uniform)하고 read only
 
