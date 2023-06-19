@@ -9,10 +9,10 @@ void main() {
 
     vec3 color = vec3(0.0);
 
-    vec2 bl = step(0.1, st);
+    vec2 bl = floor(1.0 / 0.1 * st);
     float pct = bl.x * bl.y;
 
-    vec2 tr = step(0.1, 1.0 - st);
+    vec2 tr = floor(1.0 / 0.1 * (1.0 - st));
     pct *= tr.x * tr.y;
 
     color = vec3(pct);
