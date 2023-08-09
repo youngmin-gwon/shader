@@ -2,4 +2,4 @@
 
 This is the study repo for fragment shader.
 
-[Reference](https://thebookofshaders.com)
+[Study Materials: The book of Shader](https://thebookofshaders.com)
